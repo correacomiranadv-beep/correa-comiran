@@ -366,34 +366,89 @@ export default function Home() {
     </form>
   </div>
 </section>
-      <section id="localizacao" className="py-24 bg-white border-t border-neutral-200">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
-              Localização
-            </p>
+      {/* Localização */}
+<section
+  id="localizacao"
+  className="py-24 bg-white border-t border-neutral-200"
+>
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-16">
+      <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
+        Localização
+      </p>
 
-            <h3 className="text-5xl font-serif font-bold mb-6">
-              Nosso escritório
-            </h3>
+      <h3 className="text-5xl font-serif font-bold mb-6">
+        Nossas unidades
+      </h3>
 
-            <p className="text-neutral-600 text-lg max-w-3xl mx-auto">
-              Rua Pedro Américo, 3697, Centro Cívico, Realeza - PR
-            </p>
-          </div>
+      <div className="flex items-center justify-center gap-4 mb-8">
+        <div className="w-24 h-[2px] bg-[#b28b4a]" />
+        <div className="w-3 h-3 rotate-45 bg-[#b28b4a]" />
+        <div className="w-24 h-[2px] bg-[#b28b4a]" />
+      </div>
 
-          <div className="overflow-hidden rounded-[32px] shadow-2xl border border-neutral-200 premium-card">
-            <iframe
-              title="Localização Correa & Comiran"
-              src="https://maps.google.com/maps?q=Rua%20Pedro%20Am%C3%A9rico%203697%20Centro%20C%C3%ADvico%20Realeza%20PR&t=&z=16&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="500"
-              style={{ border: 0 }}
-              loading="lazy"
-            ></iframe>
-          </div>
+      <p className="text-neutral-600 text-lg max-w-3xl mx-auto">
+        Estrutura moderna e atendimento jurídico profissional em diferentes regiões.
+      </p>
+    </div>
+
+    <div className="grid lg:grid-cols-2 gap-10">
+      {/* Unidade Realeza */}
+      <div className="premium-card bg-[#fbfaf7] rounded-[32px] overflow-hidden border border-neutral-200 shadow-2xl">
+        <div className="p-8">
+          <p className="text-[#9b7a3f] uppercase tracking-[0.25em] font-bold mb-3">
+            Unidade Realeza
+          </p>
+
+          <h4 className="text-3xl font-serif font-bold mb-5">
+            Correa & Comiran
+          </h4>
+
+          <p className="text-neutral-700 text-lg mb-8">
+            Rua Pedro Américo, 3697,
+            Centro Cívico, Realeza - PR
+          </p>
         </div>
-      </section>
+
+        <iframe
+          title="Unidade Realeza"
+          src="https://maps.google.com/maps?q=Rua%20Pedro%20Am%C3%A9rico%203697%20Centro%20C%C3%ADvico%20Realeza%20PR&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="350"
+          style={{ border: 0 }}
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      {/* Unidade Santo Antonio */}
+      <div className="premium-card bg-[#fbfaf7] rounded-[32px] overflow-hidden border border-neutral-200 shadow-2xl">
+        <div className="p-8">
+          <p className="text-[#9b7a3f] uppercase tracking-[0.25em] font-bold mb-3">
+            Unidade Santo Antônio do Sudoeste
+          </p>
+
+          <h4 className="text-3xl font-serif font-bold mb-5">
+            Correa & Comiran
+          </h4>
+
+          <p className="text-neutral-700 text-lg mb-8">
+            Av. Percy Schreiner, 490,
+            Centro, Santo Antônio do Sudoeste - PR
+          </p>
+        </div>
+
+        <iframe
+          title="Unidade Santo Antônio"
+          src="https://maps.google.com/maps?q=Avenida%20Percy%20Schreiner%20490%20Centro%20Santo%20Antonio%20do%20Sudoeste%20PR&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="350"
+          style={{ border: 0 }}
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section id="contato" className="py-24 bg-[#8d1420] text-white text-center">
         <div className="max-w-4xl mx-auto px-6">
