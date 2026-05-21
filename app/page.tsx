@@ -84,7 +84,7 @@ export default function Home() {
       </header>
 
       <section className="relative py-36 text-center overflow-hidden">
-        <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 z-0">
   <img
     src="/escritorio.jpg"
     alt="Equipe Correa & Comiran"
