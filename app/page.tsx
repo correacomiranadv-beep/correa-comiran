@@ -83,25 +83,23 @@ export default function Home() {
         </div>
       </header>
 
-<section className="py-28 text-center bg-[#fbfaf7]">
-  <p className="uppercase tracking-[0.3em] text-[#9b7a3f] font-bold mb-5">
-    Correa & Comiran
-  </p>
+      <section className="py-28 text-center">
+        <p className="uppercase tracking-[0.3em] text-[#9b7a3f] font-bold mb-5">
+          Correa & Comiran
+        </p>
 
-  <h2 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-8">
-    Advocacia estratégica,
-    <span className="block text-[#8d1420]">
-      humana e eficiente
-    </span>
-  </h2>
+        <h2 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-8">
+          Advocacia estratégica,
+          <span className="block text-[#8d1420]">humana e eficiente</span>
+        </h2>
 
-  <div className="w-40 h-[2px] bg-[#b28b4a] mx-auto mb-8" />
+        <div className="w-40 h-[2px] bg-[#b28b4a] mx-auto mb-8" />
 
-  <p className="max-w-3xl mx-auto text-xl text-neutral-600 leading-relaxed px-6">
-    Escritório especializado em soluções jurídicas modernas, com atuação em
-    Direito Previdenciário, Bancário, Civil, Consumidor e Sucessões.
-  </p>
-</section>
+        <p className="max-w-3xl mx-auto text-xl text-neutral-600 leading-relaxed">
+          Escritório especializado em soluções jurídicas modernas, com atuação em Direito
+          Previdenciário, Bancário, Civil, Consumidor e Sucessões.
+        </p>
+      </section>
 
       <section id="equipe" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
