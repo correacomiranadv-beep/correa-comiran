@@ -9,26 +9,31 @@ const equipe = [
     whatsapp: "https://wa.me/5546999417656",
     telefone: "+55 46 99941-7656",
   },
+
   {
     nome: "Laryssa Brito",
     cargo: "Advogada de Direito Bancário",
-    descricao: "Especializada em abusos bancários, RMC, fraudes e descontos indevidos.",
+    descricao:
+      "Especializada em abusos bancários, RMC, fraudes e descontos indevidos.",
     oab: "OAB/PR 134.858",
     foto: "/laryssa.jpg",
     instagram: "https://www.instagram.com/adv.laryssabrito/",
     whatsapp: "https://wa.me/5546988200648",
     telefone: "+55 46 98820-0648",
   },
+
   {
     nome: "Jairo Krug",
     cargo: "Advogado Previdenciário",
-    descricao: "Atuação em Direito Previdenciário e demandas contra o INSS.",
+    descricao:
+      "Atuação em Direito Previdenciário e demandas contra o INSS.",
     oab: "OAB/PR 129.345",
     foto: "/jairo.jpg",
     instagram: "https://www.instagram.com/adv_jairo_krug_junior/",
     whatsapp: "https://wa.me/5546988183704",
     telefone: "+55 46 98818-3704",
   },
+
   {
     nome: "Francieli Comiran",
     cargo: "Advogada Previdenciária",
@@ -39,10 +44,12 @@ const equipe = [
     whatsapp: "https://wa.me/5546999342000",
     telefone: "+55 46 99934-2000",
   },
+
   {
     nome: "Antonio Luis da Costa",
     cargo: "Advogado Cível",
-    descricao: "Atuação em Direito Civil, Direito do Consumidor e Sucessões.",
+    descricao:
+      "Atuação em Direito Civil, Direito do Consumidor e Sucessões.",
     oab: "OAB/PR 129.284",
     foto: "/antonio.jpg",
     instagram: "https://www.instagram.com/antoniolui_s/",
@@ -53,14 +60,25 @@ const equipe = [
 
 export default function Home() {
   return (
-    <main id="top" className="min-h-screen bg-[#fbfaf7] text-[#1f1f1f]">
+    <main
+      id="top"
+      className="min-h-screen bg-[#fbfaf7] text-[#1f1f1f]"
+    >
+      {/* HEADER */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#d8c7a3]/40">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <img src="/logo.jpg" alt="Correa & Comiran" className="w-16 h-16 object-contain" />
+            <img
+              src="/logo.jpg"
+              alt="Logo"
+              className="w-16 h-16 object-contain"
+            />
 
             <div>
-              <h1 className="text-2xl font-serif font-bold">Correa & Comiran</h1>
+              <h1 className="text-2xl font-serif font-bold">
+                Correa & Comiran
+              </h1>
+
               <p className="text-xs tracking-[0.25em] uppercase text-[#8b6f3d]">
                 Advogados Associados
               </p>
@@ -68,9 +86,21 @@ export default function Home() {
           </div>
 
           <nav className="hidden md:flex gap-8 text-sm font-semibold">
-            <a href="#equipe" className="hover:text-[#8d1420]">Equipe</a>
-            <a href="#areas" className="hover:text-[#8d1420]">Áreas</a>
-            <a href="#contato" className="hover:text-[#8d1420]">Contato</a>
+            <a href="#equipe" className="hover:text-[#8d1420] transition">
+              Equipe
+            </a>
+
+            <a href="#areas" className="hover:text-[#8d1420] transition">
+              Áreas
+            </a>
+
+            <a href="#localizacao" className="hover:text-[#8d1420] transition">
+              Localização
+            </a>
+
+            <a href="#contato" className="hover:text-[#8d1420] transition">
+              Contato
+            </a>
           </nav>
 
           <a
@@ -83,6 +113,7 @@ export default function Home() {
         </div>
       </header>
 
+      {/* HERO */}
       <section className="py-28 text-center bg-[#fbfaf7]">
         <p className="premium-fade uppercase tracking-[0.3em] text-[#9b7a3f] font-bold mb-5">
           Correa & Comiran
@@ -90,17 +121,21 @@ export default function Home() {
 
         <h2 className="premium-up text-5xl md:text-7xl font-serif font-bold leading-tight mb-8">
           Advocacia estratégica,
-          <span className="block text-[#8d1420]">humana e eficiente</span>
+          <span className="block text-[#8d1420]">
+            humana e eficiente
+          </span>
         </h2>
 
         <div className="gold-line w-40 h-[2px] bg-[#b28b4a] mx-auto mb-8" />
 
         <p className="premium-fade max-w-3xl mx-auto text-xl text-neutral-600 leading-relaxed px-6">
-          Escritório especializado em soluções jurídicas modernas, com atuação em Direito
-          Previdenciário, Bancário, Civil, Consumidor e Sucessões.
+          Escritório especializado em soluções jurídicas modernas,
+          com atuação em Direito Previdenciário, Bancário,
+          Civil, Consumidor e Sucessões.
         </p>
       </section>
 
+      {/* EQUIPE */}
       <section id="equipe" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
@@ -119,8 +154,8 @@ export default function Home() {
             </div>
 
             <p className="text-neutral-600 text-lg max-w-3xl mx-auto">
-              Profissionais comprometidos em oferecer atendimento jurídico de excelência,
-              com estratégia, segurança e proximidade.
+              Profissionais comprometidos em oferecer atendimento jurídico
+              de excelência, com estratégia, segurança e proximidade.
             </p>
           </div>
 
@@ -129,7 +164,9 @@ export default function Home() {
               <div
                 key={pessoa.nome}
                 className={`premium-card grid lg:grid-cols-2 bg-white rounded-[28px] overflow-hidden shadow-2xl border border-neutral-200 ${
-                  index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
+                  index % 2 === 1
+                    ? "lg:[&>*:first-child]:order-2"
+                    : ""
                 }`}
               >
                 <div className="h-[650px] bg-neutral-100">
@@ -160,6 +197,7 @@ export default function Home() {
                       <span className="w-11 h-11 rounded-full bg-[#f6f1e8] border border-[#d8c7a3] flex items-center justify-center text-[#9b7a3f]">
                         ⚖
                       </span>
+
                       <p>{pessoa.descricao}</p>
                     </div>
 
@@ -167,15 +205,20 @@ export default function Home() {
                       <span className="w-11 h-11 rounded-full bg-[#f6f1e8] border border-[#d8c7a3] flex items-center justify-center text-[#9b7a3f]">
                         §
                       </span>
+
                       <p className="font-semibold">{pessoa.oab}</p>
                     </div>
                   </div>
 
                   <div className="bg-[#f7f5f0] rounded-3xl p-8 mb-8 border border-neutral-200">
-                    <p className="text-[#8d1420] text-4xl font-serif mb-2">“</p>
+                    <p className="text-[#8d1420] text-4xl font-serif mb-2">
+                      “
+                    </p>
+
                     <p className="text-neutral-700 text-lg leading-relaxed">
-                      Atuação jurídica com responsabilidade, técnica e compromisso com os
-                      direitos de cada cliente.
+                      Atuação jurídica com responsabilidade,
+                      técnica e compromisso com os direitos
+                      de cada cliente.
                     </p>
                   </div>
 
@@ -207,6 +250,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* AREAS */}
       <section id="areas" className="py-24 bg-[#fbfaf7]">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
@@ -219,10 +263,25 @@ export default function Home() {
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { nome: "Direito Previdenciário", link: "#direito-previdenciario" },
-              { nome: "Direito Bancário", link: "#direito-bancario" },
-              { nome: "Direito Civil", link: "#direito-civil" },
-              { nome: "Direito do Consumidor", link: "#direito-consumidor" },
+              {
+                nome: "Direito Previdenciário",
+                link: "#direito-previdenciario",
+              },
+
+              {
+                nome: "Direito Bancário",
+                link: "#direito-bancario",
+              },
+
+              {
+                nome: "Direito Civil",
+                link: "#direito-civil",
+              },
+
+              {
+                nome: "Direito do Consumidor",
+                link: "#direito-consumidor",
+              },
             ].map((area) => (
               <a
                 key={area.nome}
@@ -230,119 +289,60 @@ export default function Home() {
                 className="premium-card bg-white border border-neutral-200 rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:border-[#b28b4a] transition block"
               >
                 <div className="w-14 h-14 rounded-full bg-[#8d1420] mx-auto mb-5" />
-                <h4 className="font-bold text-xl">{area.nome}</h4>
+
+                <h4 className="font-bold text-xl">
+                  {area.nome}
+                </h4>
               </a>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-white border-t border-neutral-200">
+      {/* LOCALIZAÇÃO */}
+      <section
+        id="localizacao"
+        className="py-24 bg-white border-t border-neutral-200"
+      >
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
-              Saiba mais
+              Localização
             </p>
 
             <h3 className="text-5xl font-serif font-bold mb-6">
-              Entenda nossas áreas de atuação
+              Nosso escritório
             </h3>
 
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <div className="w-24 h-[2px] bg-[#b28b4a]" />
+              <div className="w-3 h-3 rotate-45 bg-[#b28b4a]" />
+              <div className="w-24 h-[2px] bg-[#b28b4a]" />
+            </div>
+
             <p className="text-neutral-600 text-lg max-w-3xl mx-auto">
-              Conheça melhor como o escritório Correa & Comiran pode auxiliar em cada demanda jurídica.
+              Rua Pedro Américo, 3697, Centro Cívico, Realeza - PR
             </p>
           </div>
 
-          <div className="space-y-10">
-            <div id="direito-previdenciario" className="premium-card bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
-              <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
-                Direito Previdenciário
-              </h4>
-              <p className="text-neutral-700 text-lg leading-relaxed mb-5">
-                O Direito Previdenciário envolve benefícios pagos pelo INSS, como aposentadorias,
-                auxílio-doença, benefício assistencial BPC/LOAS, pensão por morte, salário-maternidade,
-                revisões de benefício e demais demandas relacionadas à Previdência Social.
-              </p>
-              <p className="text-neutral-700 text-lg leading-relaxed">
-                A atuação do escritório busca orientar o cliente desde a análise documental até o
-                pedido administrativo ou ação judicial, sempre com foco na proteção dos direitos previdenciários.
-              </p>
-            </div>
-
-            <div id="direito-bancario" className="premium-card bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
-              <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
-                Direito Bancário
-              </h4>
-              <p className="text-neutral-700 text-lg leading-relaxed mb-5">
-                O Direito Bancário trata de relações entre consumidores e instituições financeiras,
-                incluindo empréstimos abusivos, cartões consignados, RMC, fraudes bancárias,
-                cobranças indevidas e descontos não autorizados.
-              </p>
-              <p className="text-neutral-700 text-lg leading-relaxed">
-                O objetivo é identificar irregularidades, buscar a suspensão de descontos indevidos
-                e, quando cabível, pleitear restituição de valores e indenização.
-              </p>
-            </div>
-
-            <div id="direito-civil" className="premium-card bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
-              <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
-                Direito Civil
-              </h4>
-              <p className="text-neutral-700 text-lg leading-relaxed mb-5">
-                O Direito Civil abrange questões como contratos, indenizações, responsabilidade civil,
-                obrigações, cobranças, conflitos patrimoniais e demais relações jurídicas entre particulares.
-              </p>
-              <p className="text-neutral-700 text-lg leading-relaxed">
-                A atuação é voltada à solução estratégica de conflitos, prevenção de riscos e defesa dos interesses do cliente.
-              </p>
-            </div>
-
-            <div id="direito-consumidor" className="premium-card bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
-              <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
-                Direito do Consumidor
-              </h4>
-              <p className="text-neutral-700 text-lg leading-relaxed mb-5">
-                O Direito do Consumidor protege pessoas diante de práticas abusivas, cobranças indevidas,
-                negativação irregular, problemas com produtos, serviços defeituosos, contratos abusivos
-                e falhas na prestação de serviços.
-              </p>
-              <p className="text-neutral-700 text-lg leading-relaxed">
-                O escritório atua para buscar reparação, cancelamento de cobranças indevidas e proteção dos direitos do consumidor.
-              </p>
-            </div>
+          <div className="overflow-hidden rounded-[32px] shadow-2xl border border-neutral-200 premium-card">
+            <iframe
+              title="Localização Correa & Comiran"
+              src="https://maps.google.com/maps?q=Rua%20Pedro%20Am%C3%A9rico%203697%20Centro%20C%C3%ADvico%20Realeza%20PR&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="500"
+              style={{ border: 0 }}
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </section>
-<<section className="py-24 bg-white border-t border-neutral-200">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
-        Localização
-      </p>
 
-      <h3 className="text-5xl font-serif font-bold mb-6">
-        Nosso escritório
-      </h3>
-
-      <p className="text-neutral-600 text-lg max-w-3xl mx-auto">
-        Atendimento jurídico profissional com estrutura moderna e localização acessível.
-      </p>
-    </div>
-
-    <div className="overflow-hidden rounded-[32px] shadow-2xl border border-neutral-200">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.8231417397387!2d-53.533694399999995!3d-25.7764046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f0fc9cf7f2c85f%3A0xe9f3f8d5e724a30e!2sR.%20Pedro%20Am%C3%A9rico%2C%203697%20-%20Centro%20C%C3%ADvico%2C%20Realeza%20-%20PR%2C%2085770-000!5e0!3m2!1spt-BR!2sbr!4v1779385323600!5m2!1spt-BR!2sbr"
-        width="100%"
-        height="500"
-        style={{ border: 0 }}
-        allowFullScreen={true}
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-  </div>
-</section>
-      <section id="contato" className="py-24 bg-[#8d1420] text-white text-center">
+      {/* CONTATO */}
+      <section
+        id="contato"
+        className="py-24 bg-[#8d1420] text-white text-center"
+      >
         <div className="max-w-4xl mx-auto px-6">
           <h3 className="text-5xl font-serif font-bold mb-6">
             Precisa de orientação jurídica?
@@ -362,16 +362,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FOOTER */}
       <footer className="py-10 bg-white border-t border-neutral-200 text-center">
         <p className="font-serif text-2xl font-bold mb-2">
           Correa & Comiran Advogados Associados
         </p>
+
         <p className="text-neutral-500">
           © 2026 Correa & Comiran — Todos os direitos reservados.
         </p>
       </footer>
 
-      {/* Botões flutuantes */}
+      {/* BOTÕES FLUTUANTES */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
         <a
           href="https://wa.me/554699342000"
@@ -379,7 +381,10 @@ export default function Home() {
           className="premium-button group flex items-center gap-3 bg-[#8d1420] text-white px-5 py-4 rounded-full shadow-2xl border border-[#d6aa55]/40 hover:bg-black hover:text-[#d6aa55] transition"
         >
           <span className="text-xl">💬</span>
-          <span className="hidden md:block font-bold">Fale conosco</span>
+
+          <span className="hidden md:block font-bold">
+            Fale conosco
+          </span>
         </a>
 
         <a
@@ -390,6 +395,7 @@ export default function Home() {
         </a>
       </div>
 
+      {/* ANIMAÇÕES */}
       <style jsx global>{`
         html {
           scroll-behavior: smooth;
@@ -429,6 +435,7 @@ export default function Home() {
           from {
             opacity: 0;
           }
+
           to {
             opacity: 1;
           }
@@ -439,6 +446,7 @@ export default function Home() {
             opacity: 0;
             transform: translateY(35px);
           }
+
           to {
             opacity: 1;
             transform: translateY(0);
@@ -449,6 +457,7 @@ export default function Home() {
           from {
             width: 0;
           }
+
           to {
             width: 160px;
           }
