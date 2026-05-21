@@ -89,7 +89,7 @@ export default function Home() {
     <img
       src="/escritorio.jpg"
       alt="Equipe Correa & Comiran"
-      className="w-full h-full object-cover opacity-90"
+      className="w-full h-full object-cover object-top opacity-90"
     />
 
     {/* Fade branco vindo de baixo */}
