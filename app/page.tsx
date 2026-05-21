@@ -83,7 +83,18 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="py-28 text-center">
+      <section className="relative py-36 text-center overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+  <img
+    src="/escritorio.jpg"
+    alt="Equipe Correa & Comiran"
+    className="w-full h-full object-cover opacity-25"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-[#fbfaf7] via-[#fbfaf7]/75 to-[#fbfaf7]/25" />
+
+  <div className="absolute inset-0 bg-white/20" />
+</div>
         <p className="uppercase tracking-[0.3em] text-[#9b7a3f] font-bold mb-5">
           Correa & Comiran
         </p>
