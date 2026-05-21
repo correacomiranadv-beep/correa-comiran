@@ -313,7 +313,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-<section className="py-24 bg-white border-t border-neutral-200">
+<<section className="py-24 bg-white border-t border-neutral-200">
   <div className="max-w-7xl mx-auto px-6">
     <div className="text-center mb-16">
       <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
@@ -331,14 +331,14 @@ export default function Home() {
 
     <div className="overflow-hidden rounded-[32px] shadow-2xl border border-neutral-200">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.8231417397387!2d-53.533694399999995!3d-25.7764046!2m3!1f0!2f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f0fc9cf7f2c85f%3A0xe9f3f8d5e724a30e!2sR.%20Pedro%20Am%C3%A9rico%2C%203697%20-%20Centro%20C%C3%ADvico%2C%20Realeza%20-%20PR%2C%2085770-000!5e0!3m2!1spt-BR!2sbr!4v1779385323600!5m2!1spt-BR!2sbr"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.8231417397387!2d-53.533694399999995!3d-25.7764046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f0fc9cf7f2c85f%3A0xe9f3f8d5e724a30e!2sR.%20Pedro%20Am%C3%A9rico%2C%203697%20-%20Centro%20C%C3%ADvico%2C%20Realeza%20-%20PR%2C%2085770-000!5e0!3m2!1spt-BR!2sbr!4v1779385323600!5m2!1spt-BR!2sbr"
         width="100%"
         height="500"
         style={{ border: 0 }}
         allowFullScreen={true}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-      />
+      ></iframe>
     </div>
   </div>
 </section>
