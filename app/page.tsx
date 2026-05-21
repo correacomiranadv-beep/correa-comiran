@@ -219,23 +219,119 @@ export default function Home() {
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              "Direito Previdenciário",
-              "Direito Bancário",
-              "Direito Civil",
-              "Direito do Consumidor",
-            ].map((area) => (
-              <div
-                key={area}
-                className="bg-white border border-neutral-200 rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition"
-              >
-                <div className="w-14 h-14 rounded-full bg-[#8d1420] mx-auto mb-5" />
-                <h4 className="font-bold text-xl">{area}</h4>
-              </div>
-            ))}
+  {
+    nome: "Direito Previdenciário",
+    link: "#direito-previdenciario",
+  },
+  {
+    nome: "Direito Bancário",
+    link: "#direito-bancario",
+  },
+  {
+    nome: "Direito Civil",
+    link: "#direito-civil",
+  },
+  {
+    nome: "Direito do Consumidor",
+    link: "#direito-consumidor",
+  },
+].map((area) => (
+  <a
+    key={area.nome}
+    href={area.link}
+    className="bg-white border border-neutral-200 rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:border-[#b28b4a] transition block"
+  >
+    <div className="w-14 h-14 rounded-full bg-[#8d1420] mx-auto mb-5" />
+    <h4 className="font-bold text-xl">{area.nome}</h4>
+  </a>
+))}
           </div>
         </div>
       </section>
+<section className="py-24 bg-white border-t border-neutral-200">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-16">
+      <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
+        Saiba mais
+      </p>
 
+      <h3 className="text-5xl font-serif font-bold mb-6">
+        Entenda nossas áreas de atuação
+      </h3>
+
+      <p className="text-neutral-600 text-lg max-w-3xl mx-auto">
+        Conheça melhor como o escritório Correa & Comiran pode auxiliar em cada demanda jurídica.
+      </p>
+    </div>
+
+    <div className="space-y-10">
+      <div id="direito-previdenciario" className="bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
+        <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
+          Direito Previdenciário
+        </h4>
+
+        <p className="text-neutral-700 text-lg leading-relaxed mb-5">
+          O Direito Previdenciário envolve benefícios pagos pelo INSS, como aposentadorias,
+          auxílio-doença, benefício assistencial BPC/LOAS, pensão por morte, salário-maternidade,
+          revisões de benefício e demais demandas relacionadas à Previdência Social.
+        </p>
+
+        <p className="text-neutral-700 text-lg leading-relaxed">
+          A atuação do escritório busca orientar o cliente desde a análise documental até o
+          pedido administrativo ou ação judicial, sempre com foco na proteção dos direitos previdenciários.
+        </p>
+      </div>
+
+      <div id="direito-bancario" className="bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
+        <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
+          Direito Bancário
+        </h4>
+
+        <p className="text-neutral-700 text-lg leading-relaxed mb-5">
+          O Direito Bancário trata de relações entre consumidores e instituições financeiras,
+          incluindo empréstimos abusivos, cartões consignados, RMC, fraudes bancárias,
+          cobranças indevidas e descontos não autorizados.
+        </p>
+
+        <p className="text-neutral-700 text-lg leading-relaxed">
+          O objetivo é identificar irregularidades, buscar a suspensão de descontos indevidos
+          e, quando cabível, pleitear restituição de valores e indenização.
+        </p>
+      </div>
+
+      <div id="direito-civil" className="bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
+        <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
+          Direito Civil
+        </h4>
+
+        <p className="text-neutral-700 text-lg leading-relaxed mb-5">
+          O Direito Civil abrange questões como contratos, indenizações, responsabilidade civil,
+          obrigações, cobranças, conflitos patrimoniais e demais relações jurídicas entre particulares.
+        </p>
+
+        <p className="text-neutral-700 text-lg leading-relaxed">
+          A atuação é voltada à solução estratégica de conflitos, prevenção de riscos e defesa dos interesses do cliente.
+        </p>
+      </div>
+
+      <div id="direito-consumidor" className="bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
+        <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
+          Direito do Consumidor
+        </h4>
+
+        <p className="text-neutral-700 text-lg leading-relaxed mb-5">
+          O Direito do Consumidor protege pessoas diante de práticas abusivas, cobranças indevidas,
+          negativação irregular, problemas com produtos, serviços defeituosos, contratos abusivos
+          e falhas na prestação de serviços.
+        </p>
+
+        <p className="text-neutral-700 text-lg leading-relaxed">
+          O escritório atua para buscar reparação, cancelamento de cobranças indevidas e proteção dos direitos do consumidor.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
       <section id="contato" className="py-24 bg-[#8d1420] text-white text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h3 className="text-5xl font-serif font-bold mb-6">
