@@ -1,255 +1,266 @@
+const equipe = [
+  {
+    nome: "Mariele Correa",
+    cargo: "Advogada Previdenciarista",
+    descricao: "Especializada em Direitos Previdenciários.",
+    oab: "OAB/PR 105.238",
+    foto: "/mariele.jpg",
+    instagram: "https://www.instagram.com/marielecorreaantonielli/",
+    whatsapp: "https://wa.me/5546999417656",
+    telefone: "+55 46 99941-7656",
+  },
+  {
+    nome: "Laryssa Brito",
+    cargo: "Advogada de Direito Bancário",
+    descricao: "Especializada em abusos bancários, RMC, fraudes e descontos indevidos.",
+    oab: "OAB/PR 134.858",
+    foto: "/laryssa.jpg",
+    instagram: "https://www.instagram.com/adv.laryssabrito/",
+    whatsapp: "https://wa.me/5546988200648",
+    telefone: "+55 46 98820-0648",
+  },
+  {
+    nome: "Jairo Krug",
+    cargo: "Advogado Previdenciário",
+    descricao: "Atuação em Direito Previdenciário e demandas contra o INSS.",
+    oab: "OAB/PR 129.345",
+    foto: "/jairo.jpg",
+    instagram: "https://www.instagram.com/adv_jairo_krug_junior/",
+    whatsapp: "https://wa.me/5546988183704",
+    telefone: "+55 46 98818-3704",
+  },
+  {
+    nome: "Francieli Comiran",
+    cargo: "Advogada Previdenciária",
+    descricao: "Especialista em Direitos Previdenciários.",
+    oab: "OAB/PR 101.893",
+    foto: "/francieli.jpg",
+    instagram: "https://www.instagram.com/fran_comiran/",
+    whatsapp: "https://wa.me/5546999342000",
+    telefone: "+55 46 99934-2000",
+  },
+  {
+    nome: "Antonio Luis da Costa",
+    cargo: "Advogado Cível",
+    descricao: "Atuação em Direito Civil, Direito do Consumidor e Sucessões.",
+    oab: "OAB/PR 129.284",
+    foto: "/antonio.jpg",
+    instagram: "https://www.instagram.com/antoniolui_s/",
+    whatsapp: "https://wa.me/5545998506623",
+    telefone: "+55 45 99850-6623",
+  },
+]
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white overflow-hidden">
-      {/* Background */}
-      <div className="fixed inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-[#120909] to-black" />
-        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#5c0f17]/20 blur-3xl rounded-full" />
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-yellow-500/10 blur-3xl rounded-full" />
-      </div>
-
-      {/* Header */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl bg-black/60 border-b border-white/10">
+    <main className="min-h-screen bg-[#fbfaf7] text-[#1f1f1f]">
+      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#d8c7a3]/40">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <img
-              src="/logo.jpg"
-              alt="Correa & Comiran"
-              className="w-16 h-16 object-contain"
-            />
+            <img src="/logo.jpg" alt="Correa & Comiran" className="w-16 h-16 object-contain" />
 
             <div>
-              <h1 className="text-2xl font-bold tracking-wide text-white">
-                Correa & Comiran
-              </h1>
-
-              <p className="text-sm text-neutral-400 tracking-[0.2em] uppercase">
-                Advocacia & Consultoria Jurídica
+              <h1 className="text-2xl font-serif font-bold">Correa & Comiran</h1>
+              <p className="text-xs tracking-[0.25em] uppercase text-[#8b6f3d]">
+                Advogados Associados
               </p>
             </div>
           </div>
 
-          <nav className="hidden md:flex items-center gap-8 text-sm text-neutral-300">
-            <a href="#areas" className="hover:text-yellow-400 transition">
-              Áreas de Atuação
-            </a>
-
-            <a href="#sobre" className="hover:text-yellow-400 transition">
-              Sobre
-            </a>
-
-            <a href="#contato" className="hover:text-yellow-400 transition">
-              Contato
-            </a>
+          <nav className="hidden md:flex gap-8 text-sm font-semibold">
+            <a href="#equipe" className="hover:text-[#8d1420]">Equipe</a>
+            <a href="#areas" className="hover:text-[#8d1420]">Áreas</a>
+            <a href="#contato" className="hover:text-[#8d1420]">Contato</a>
           </nav>
 
           <a
             href="https://wa.me/554699342000"
             target="_blank"
-            className="bg-gradient-to-r from-[#7b101b] to-yellow-500 text-white px-6 py-3 rounded-full font-semibold shadow-2xl hover:scale-105 transition"
+            className="bg-[#8d1420] text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-black transition"
           >
             WhatsApp
           </a>
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="relative min-h-screen flex items-center">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center py-24">
-          <div>
-            <div className="inline-flex items-center gap-2 border border-yellow-500/30 bg-yellow-500/10 text-yellow-400 px-4 py-2 rounded-full text-sm mb-8">
-              Excelência jurídica • Atendimento estratégico
-            </div>
+      <section className="py-28 text-center">
+        <p className="uppercase tracking-[0.3em] text-[#9b7a3f] font-bold mb-5">
+          Correa & Comiran
+        </p>
 
-            <h2 className="text-5xl md:text-7xl font-black leading-tight mb-8">
-              Defesa jurídica
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#8d1420] via-white to-yellow-400">
-                com autoridade
-              </span>
-              e resultados.
-            </h2>
+        <h2 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-8">
+          Advocacia estratégica,
+          <span className="block text-[#8d1420]">humana e eficiente</span>
+        </h2>
 
-            <p className="text-xl text-neutral-300 leading-relaxed max-w-2xl mb-10">
-              O escritório Correa & Comiran atua com excelência em Direito Previdenciário,
-              Trabalhista, Civil e Empresarial, oferecendo soluções jurídicas modernas,
-              estratégicas e humanizadas.
-            </p>
+        <div className="w-40 h-[2px] bg-[#b28b4a] mx-auto mb-8" />
 
-            <div className="flex flex-wrap gap-5">
-              <a
-                href="https://wa.me/554699342000"
-                target="_blank"
-                className="bg-gradient-to-r from-[#7b101b] to-yellow-500 px-8 py-5 rounded-2xl font-bold text-lg shadow-2xl hover:scale-105 transition"
-              >
-                Falar com um advogado
-              </a>
-
-              <a
-                href="#areas"
-                className="border border-white/20 px-8 py-5 rounded-2xl text-lg hover:border-yellow-400 hover:text-yellow-400 transition"
-              >
-                Conheça nossas áreas
-              </a>
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#7b101b]/40 to-yellow-500/20 blur-3xl rounded-full" />
-
-            <div className="relative border border-white/10 bg-white/5 backdrop-blur-xl rounded-[40px] p-10 shadow-2xl">
-              <img
-                src="/logo.jpg"
-                alt="Logo Correa & Comiran"
-                className="w-full object-contain"
-              />
-            </div>
-          </div>
-        </div>
+        <p className="max-w-3xl mx-auto text-xl text-neutral-600 leading-relaxed">
+          Escritório especializado em soluções jurídicas modernas, com atuação em Direito
+          Previdenciário, Bancário, Civil, Consumidor e Sucessões.
+        </p>
       </section>
 
-      {/* Áreas */}
-      <section id="areas" className="py-28 border-t border-white/10">
+      <section id="equipe" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
-            <p className="text-yellow-400 uppercase tracking-[0.3em] text-sm mb-4">
-              Especialidades
+            <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
+              Nossa equipe
             </p>
 
-            <h3 className="text-5xl font-black mb-6">
-              Áreas de atuação
+            <h3 className="text-5xl md:text-6xl font-serif font-bold mb-5">
+              Conheça nossa equipe
             </h3>
 
-            <p className="text-neutral-400 max-w-3xl mx-auto text-lg">
-              Atendimento jurídico completo para pessoas físicas e empresas.
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <div className="w-24 h-[2px] bg-[#b28b4a]" />
+              <div className="w-3 h-3 rotate-45 bg-[#b28b4a]" />
+              <div className="w-24 h-[2px] bg-[#b28b4a]" />
+            </div>
+
+            <p className="text-neutral-600 text-lg max-w-3xl mx-auto">
+              Profissionais comprometidos em oferecer atendimento jurídico de excelência,
+              com estratégia, segurança e proximidade.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
-            {[
-              {
-                title: 'Direito Previdenciário',
-                text: 'Aposentadorias, BPC/LOAS, auxílio-doença, revisões e demandas contra o INSS.',
-              },
-              {
-                title: 'Direito Trabalhista',
-                text: 'Rescisões, verbas trabalhistas, acidentes de trabalho e defesa do trabalhador.',
-              },
-              {
-                title: 'Direito Civil',
-                text: 'Indenizações, contratos, responsabilidade civil e demandas patrimoniais.',
-              },
-              {
-                title: 'Consultoria Empresarial',
-                text: 'Assessoria jurídica estratégica para empresas e profissionais.',
-              },
-            ].map((item) => (
+          <div className="space-y-20">
+            {equipe.map((pessoa, index) => (
               <div
-                key={item.title}
-                className="group border border-white/10 bg-white/5 rounded-[32px] p-8 hover:border-yellow-500/50 hover:-translate-y-2 transition duration-300"
+                key={pessoa.nome}
+                className={`grid lg:grid-cols-2 bg-white rounded-[28px] overflow-hidden shadow-2xl border border-neutral-200 ${
+                  index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
+                }`}
               >
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-r from-[#7b101b] to-yellow-500 mb-6" />
+                <div className="h-[650px] bg-neutral-100">
+                  <img
+                    src={pessoa.foto}
+                    alt={pessoa.nome}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-                <h4 className="text-2xl font-bold mb-4 group-hover:text-yellow-400 transition">
-                  {item.title}
-                </h4>
+                <div className="p-10 md:p-16 flex flex-col justify-center">
+                  <h4 className="text-4xl md:text-5xl font-serif font-bold mb-4">
+                    {pessoa.nome}
+                  </h4>
 
-                <p className="text-neutral-400 leading-relaxed">
-                  {item.text}
-                </p>
+                  <div className="flex items-center gap-4 mb-8">
+                    <div className="w-28 h-[2px] bg-[#b28b4a]" />
+                    <div className="w-3 h-3 rotate-45 bg-[#b28b4a]" />
+                    <div className="w-28 h-[2px] bg-[#b28b4a]" />
+                  </div>
+
+                  <p className="text-[#8d1420] uppercase tracking-[0.18em] font-black mb-8">
+                    {pessoa.cargo}
+                  </p>
+
+                  <div className="space-y-6 text-lg text-neutral-700 mb-8">
+                    <div className="flex gap-4 items-start">
+                      <span className="w-11 h-11 rounded-full bg-[#f6f1e8] border border-[#d8c7a3] flex items-center justify-center text-[#9b7a3f]">
+                        ⚖
+                      </span>
+                      <p>{pessoa.descricao}</p>
+                    </div>
+
+                    <div className="border-t border-neutral-200 pt-6 flex gap-4 items-center">
+                      <span className="w-11 h-11 rounded-full bg-[#f6f1e8] border border-[#d8c7a3] flex items-center justify-center text-[#9b7a3f]">
+                        §
+                      </span>
+                      <p className="font-semibold">{pessoa.oab}</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-[#f7f5f0] rounded-3xl p-8 mb-8 border border-neutral-200">
+                    <p className="text-[#8d1420] text-4xl font-serif mb-2">“</p>
+                    <p className="text-neutral-700 text-lg leading-relaxed">
+                      Atuação jurídica com responsabilidade, técnica e compromisso com os
+                      direitos de cada cliente.
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap gap-4">
+                    <a
+                      href={pessoa.instagram}
+                      target="_blank"
+                      className="bg-[#8d1420] text-white px-7 py-4 rounded-xl font-bold shadow-lg hover:bg-[#6d0f18] transition"
+                    >
+                      Ver Instagram
+                    </a>
+
+                    <a
+                      href={pessoa.whatsapp}
+                      target="_blank"
+                      className="bg-[#1f1f1f] text-[#d6aa55] px-7 py-4 rounded-xl font-bold shadow-lg hover:bg-black transition"
+                    >
+                      Falar no WhatsApp
+                    </a>
+                  </div>
+
+                  <p className="mt-6 text-[#9b7a3f] font-semibold">
+                    WhatsApp: {pessoa.telefone}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Sobre */}
-      <section id="sobre" className="py-28 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-          <div>
-            <p className="text-yellow-400 uppercase tracking-[0.3em] text-sm mb-4">
-              Sobre o escritório
-            </p>
+      <section id="areas" className="py-24 bg-[#fbfaf7]">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
+            Especialidades
+          </p>
 
-            <h3 className="text-5xl font-black mb-8 leading-tight">
-              Advocacia moderna,
-              <span className="text-[#9e1b28]"> estratégica</span>
-              e humana.
-            </h3>
+          <h3 className="text-5xl font-serif font-bold mb-14">
+            Áreas de atuação
+          </h3>
 
-            <p className="text-neutral-300 text-lg leading-relaxed mb-6">
-              A Correa & Comiran oferece atendimento jurídico personalizado,
-              com atuação técnica, ética e focada na obtenção de resultados reais.
-            </p>
-
-            <p className="text-neutral-400 text-lg leading-relaxed">
-              Nossa missão é proporcionar segurança jurídica, confiança e excelência
-              em cada processo e atendimento.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br from-[#7b101b] to-black border border-white/10 rounded-[32px] p-10">
-              <h4 className="text-5xl font-black text-yellow-400 mb-3">+500</h4>
-              <p className="text-neutral-300">Clientes atendidos</p>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-[32px] p-10">
-              <h4 className="text-5xl font-black text-yellow-400 mb-3">100%</h4>
-              <p className="text-neutral-300">Compromisso profissional</p>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-[32px] p-10">
-              <h4 className="text-5xl font-black text-yellow-400 mb-3">INSS</h4>
-              <p className="text-neutral-300">Especialidade previdenciária</p>
-            </div>
-
-            <div className="bg-gradient-to-br from-black to-[#7b101b] border border-white/10 rounded-[32px] p-10">
-              <h4 className="text-5xl font-black text-yellow-400 mb-3">24h</h4>
-              <p className="text-neutral-300">Atendimento digital</p>
-            </div>
+          <div className="grid md:grid-cols-4 gap-6">
+            {[
+              "Direito Previdenciário",
+              "Direito Bancário",
+              "Direito Civil",
+              "Direito do Consumidor",
+            ].map((area) => (
+              <div
+                key={area}
+                className="bg-white border border-neutral-200 rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition"
+              >
+                <div className="w-14 h-14 rounded-full bg-[#8d1420] mx-auto mb-5" />
+                <h4 className="font-bold text-xl">{area}</h4>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-28 border-t border-white/10">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <div className="border border-yellow-500/20 bg-gradient-to-br from-[#24090d] to-black rounded-[40px] p-14 shadow-2xl">
-            <p className="text-yellow-400 uppercase tracking-[0.3em] text-sm mb-4">
-              Atendimento imediato
-            </p>
+      <section id="contato" className="py-24 bg-[#8d1420] text-white text-center">
+        <div className="max-w-4xl mx-auto px-6">
+          <h3 className="text-5xl font-serif font-bold mb-6">
+            Precisa de orientação jurídica?
+          </h3>
 
-            <h3 className="text-5xl font-black leading-tight mb-8">
-              Precisa de orientação jurídica?
-            </h3>
+          <p className="text-xl text-white/80 mb-10">
+            Fale com nossa equipe e receba atendimento profissional.
+          </p>
 
-            <p className="text-xl text-neutral-300 mb-10 max-w-3xl mx-auto">
-              Fale diretamente com nossa equipe e receba atendimento jurídico profissional.
-            </p>
-
-            <a
-              href="https://wa.me/554699342000"
-              target="_blank"
-              className="inline-flex bg-gradient-to-r from-[#7b101b] to-yellow-500 px-10 py-5 rounded-2xl text-xl font-bold shadow-2xl hover:scale-105 transition"
-            >
-              Chamar no WhatsApp
-            </a>
-          </div>
+          <a
+            href="https://wa.me/554699342000"
+            target="_blank"
+            className="bg-white text-[#8d1420] px-10 py-5 rounded-2xl font-black shadow-2xl hover:bg-black hover:text-[#d6aa55] transition"
+          >
+            Entrar em contato
+          </a>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer
-        id="contato"
-        className="border-t border-white/10 py-10 text-center text-neutral-500"
-      >
-        <p className="text-lg font-semibold text-white mb-2">
-          Correa & Comiran Advocacia
+      <footer className="py-10 bg-white border-t border-neutral-200 text-center">
+        <p className="font-serif text-2xl font-bold mb-2">
+          Correa & Comiran Advogados Associados
         </p>
-
-        <p>WhatsApp: +55 46 9934-2000</p>
-
-        <p className="mt-4 text-sm text-neutral-600">
+        <p className="text-neutral-500">
           © 2026 Correa & Comiran — Todos os direitos reservados.
         </p>
       </footer>
