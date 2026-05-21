@@ -100,7 +100,7 @@ export default function Home() {
   </div>
 
   {/* Conteúdo */}
-  <div className="relative z-10 text-center px-6 pt-40">
+  <div className="relative z-10 text-center px-6 pt-20">
     <p className="uppercase tracking-[0.35em] text-[#b3873d] font-bold mb-6">
       Correa & Comiran
     </p>
