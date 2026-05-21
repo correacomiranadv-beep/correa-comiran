@@ -70,6 +70,9 @@ export default function Home() {
             <a href="#equipe" className="hover:text-[#8d1420] transition">Equipe</a>
             <a href="#areas" className="hover:text-[#8d1420] transition">Áreas</a>
             <a href="#localizacao" className="hover:text-[#8d1420] transition">Localização</a>
+            <a href="#formulario" className="hover:text-[#8d1420] transition">
+  Atendimento
+</a>
             <a href="#contato" className="hover:text-[#8d1420] transition">Contato</a>
           </nav>
 
@@ -280,7 +283,89 @@ export default function Home() {
           </div>
         </div>
       </section>
+{/* Formulário de Atendimento */}
+<section id="formulario" className="py-24 bg-[#fbfaf7] border-t border-neutral-200">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-16">
+      <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
+        Atendimento
+      </p>
 
+      <h3 className="text-5xl font-serif font-bold mb-6">
+        Solicite seu atendimento
+      </h3>
+
+      <p className="text-neutral-600 text-lg max-w-3xl mx-auto">
+        Preencha seus dados e nossa equipe entrará em contato pelo WhatsApp.
+      </p>
+    </div>
+
+    <form
+      action="https://formsubmit.co/correacomiranadv@gmail.com"
+      method="POST"
+      className="premium-card max-w-4xl mx-auto bg-white rounded-[32px] p-8 md:p-12 shadow-2xl border border-neutral-200 space-y-6"
+    >
+      <input type="hidden" name="_subject" value="Novo atendimento pelo site Correa & Comiran" />
+      <input type="hidden" name="_captcha" value="false" />
+
+      <div className="grid md:grid-cols-2 gap-6">
+        <input
+          type="text"
+          name="nome"
+          placeholder="Nome completo"
+          required
+          className="w-full bg-[#fbfaf7] border border-neutral-200 rounded-2xl px-5 py-4 outline-none focus:border-[#8d1420]"
+        />
+
+        <input
+          type="tel"
+          name="whatsapp"
+          placeholder="WhatsApp"
+          required
+          className="w-full bg-[#fbfaf7] border border-neutral-200 rounded-2xl px-5 py-4 outline-none focus:border-[#8d1420]"
+        />
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        <input
+          type="email"
+          name="email"
+          placeholder="E-mail"
+          className="w-full bg-[#fbfaf7] border border-neutral-200 rounded-2xl px-5 py-4 outline-none focus:border-[#8d1420]"
+        />
+
+        <select
+          name="area"
+          required
+          className="w-full bg-[#fbfaf7] border border-neutral-200 rounded-2xl px-5 py-4 outline-none focus:border-[#8d1420]"
+        >
+          <option value="">Área de interesse</option>
+          <option>Direito Previdenciário</option>
+          <option>Direito Bancário</option>
+          <option>Direito Civil</option>
+          <option>Direito do Consumidor</option>
+          <option>Sucessões</option>
+          <option>Outro assunto</option>
+        </select>
+      </div>
+
+      <textarea
+        name="mensagem"
+        placeholder="Descreva brevemente o seu caso"
+        rows={6}
+        required
+        className="w-full bg-[#fbfaf7] border border-neutral-200 rounded-2xl px-5 py-4 outline-none focus:border-[#8d1420]"
+      ></textarea>
+
+      <button
+        type="submit"
+        className="premium-button w-full bg-[#8d1420] text-white py-5 rounded-2xl font-black shadow-xl hover:bg-black hover:text-[#d6aa55] transition"
+      >
+        Enviar solicitação
+      </button>
+    </form>
+  </div>
+</section>
       <section id="localizacao" className="py-24 bg-white border-t border-neutral-200">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
