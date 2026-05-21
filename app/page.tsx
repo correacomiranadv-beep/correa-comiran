@@ -76,26 +76,26 @@ export default function Home() {
           <a
             href="https://wa.me/554699342000"
             target="_blank"
-            className="bg-[#8d1420] text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-black transition"
+            className="premium-button bg-[#8d1420] text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-black transition"
           >
             WhatsApp
           </a>
         </div>
       </header>
 
-      <section className="py-28 text-center">
-        <p className="uppercase tracking-[0.3em] text-[#9b7a3f] font-bold mb-5">
+      <section className="py-28 text-center bg-[#fbfaf7]">
+        <p className="premium-fade uppercase tracking-[0.3em] text-[#9b7a3f] font-bold mb-5">
           Correa & Comiran
         </p>
 
-        <h2 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-8">
+        <h2 className="premium-up text-5xl md:text-7xl font-serif font-bold leading-tight mb-8">
           Advocacia estratégica,
           <span className="block text-[#8d1420]">humana e eficiente</span>
         </h2>
 
-        <div className="w-40 h-[2px] bg-[#b28b4a] mx-auto mb-8" />
+        <div className="gold-line w-40 h-[2px] bg-[#b28b4a] mx-auto mb-8" />
 
-        <p className="max-w-3xl mx-auto text-xl text-neutral-600 leading-relaxed">
+        <p className="premium-fade max-w-3xl mx-auto text-xl text-neutral-600 leading-relaxed px-6">
           Escritório especializado em soluções jurídicas modernas, com atuação em Direito
           Previdenciário, Bancário, Civil, Consumidor e Sucessões.
         </p>
@@ -128,7 +128,7 @@ export default function Home() {
             {equipe.map((pessoa, index) => (
               <div
                 key={pessoa.nome}
-                className={`grid lg:grid-cols-2 bg-white rounded-[28px] overflow-hidden shadow-2xl border border-neutral-200 ${
+                className={`premium-card grid lg:grid-cols-2 bg-white rounded-[28px] overflow-hidden shadow-2xl border border-neutral-200 ${
                   index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
                 }`}
               >
@@ -183,7 +183,7 @@ export default function Home() {
                     <a
                       href={pessoa.instagram}
                       target="_blank"
-                      className="bg-[#8d1420] text-white px-7 py-4 rounded-xl font-bold shadow-lg hover:bg-[#6d0f18] transition"
+                      className="premium-button bg-[#8d1420] text-white px-7 py-4 rounded-xl font-bold shadow-lg hover:bg-[#6d0f18] transition"
                     >
                       Ver Instagram
                     </a>
@@ -191,7 +191,7 @@ export default function Home() {
                     <a
                       href={pessoa.whatsapp}
                       target="_blank"
-                      className="bg-[#1f1f1f] text-[#d6aa55] px-7 py-4 rounded-xl font-bold shadow-lg hover:bg-black transition"
+                      className="premium-button bg-[#1f1f1f] text-[#d6aa55] px-7 py-4 rounded-xl font-bold shadow-lg hover:bg-black transition"
                     >
                       Falar no WhatsApp
                     </a>
@@ -219,119 +219,101 @@ export default function Home() {
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-  {
-    nome: "Direito Previdenciário",
-    link: "#direito-previdenciario",
-  },
-  {
-    nome: "Direito Bancário",
-    link: "#direito-bancario",
-  },
-  {
-    nome: "Direito Civil",
-    link: "#direito-civil",
-  },
-  {
-    nome: "Direito do Consumidor",
-    link: "#direito-consumidor",
-  },
-].map((area) => (
-  <a
-    key={area.nome}
-    href={area.link}
-    className="bg-white border border-neutral-200 rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:border-[#b28b4a] transition block"
-  >
-    <div className="w-14 h-14 rounded-full bg-[#8d1420] mx-auto mb-5" />
-    <h4 className="font-bold text-xl">{area.nome}</h4>
-  </a>
-))}
+              { nome: "Direito Previdenciário", link: "#direito-previdenciario" },
+              { nome: "Direito Bancário", link: "#direito-bancario" },
+              { nome: "Direito Civil", link: "#direito-civil" },
+              { nome: "Direito do Consumidor", link: "#direito-consumidor" },
+            ].map((area) => (
+              <a
+                key={area.nome}
+                href={area.link}
+                className="premium-card bg-white border border-neutral-200 rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:border-[#b28b4a] transition block"
+              >
+                <div className="w-14 h-14 rounded-full bg-[#8d1420] mx-auto mb-5" />
+                <h4 className="font-bold text-xl">{area.nome}</h4>
+              </a>
+            ))}
           </div>
         </div>
       </section>
-<section className="py-24 bg-white border-t border-neutral-200">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
-        Saiba mais
-      </p>
 
-      <h3 className="text-5xl font-serif font-bold mb-6">
-        Entenda nossas áreas de atuação
-      </h3>
+      <section className="py-24 bg-white border-t border-neutral-200">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
+              Saiba mais
+            </p>
 
-      <p className="text-neutral-600 text-lg max-w-3xl mx-auto">
-        Conheça melhor como o escritório Correa & Comiran pode auxiliar em cada demanda jurídica.
-      </p>
-    </div>
+            <h3 className="text-5xl font-serif font-bold mb-6">
+              Entenda nossas áreas de atuação
+            </h3>
 
-    <div className="space-y-10">
-      <div id="direito-previdenciario" className="bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
-        <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
-          Direito Previdenciário
-        </h4>
+            <p className="text-neutral-600 text-lg max-w-3xl mx-auto">
+              Conheça melhor como o escritório Correa & Comiran pode auxiliar em cada demanda jurídica.
+            </p>
+          </div>
 
-        <p className="text-neutral-700 text-lg leading-relaxed mb-5">
-          O Direito Previdenciário envolve benefícios pagos pelo INSS, como aposentadorias,
-          auxílio-doença, benefício assistencial BPC/LOAS, pensão por morte, salário-maternidade,
-          revisões de benefício e demais demandas relacionadas à Previdência Social.
-        </p>
+          <div className="space-y-10">
+            <div id="direito-previdenciario" className="premium-card bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
+              <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
+                Direito Previdenciário
+              </h4>
+              <p className="text-neutral-700 text-lg leading-relaxed mb-5">
+                O Direito Previdenciário envolve benefícios pagos pelo INSS, como aposentadorias,
+                auxílio-doença, benefício assistencial BPC/LOAS, pensão por morte, salário-maternidade,
+                revisões de benefício e demais demandas relacionadas à Previdência Social.
+              </p>
+              <p className="text-neutral-700 text-lg leading-relaxed">
+                A atuação do escritório busca orientar o cliente desde a análise documental até o
+                pedido administrativo ou ação judicial, sempre com foco na proteção dos direitos previdenciários.
+              </p>
+            </div>
 
-        <p className="text-neutral-700 text-lg leading-relaxed">
-          A atuação do escritório busca orientar o cliente desde a análise documental até o
-          pedido administrativo ou ação judicial, sempre com foco na proteção dos direitos previdenciários.
-        </p>
-      </div>
+            <div id="direito-bancario" className="premium-card bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
+              <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
+                Direito Bancário
+              </h4>
+              <p className="text-neutral-700 text-lg leading-relaxed mb-5">
+                O Direito Bancário trata de relações entre consumidores e instituições financeiras,
+                incluindo empréstimos abusivos, cartões consignados, RMC, fraudes bancárias,
+                cobranças indevidas e descontos não autorizados.
+              </p>
+              <p className="text-neutral-700 text-lg leading-relaxed">
+                O objetivo é identificar irregularidades, buscar a suspensão de descontos indevidos
+                e, quando cabível, pleitear restituição de valores e indenização.
+              </p>
+            </div>
 
-      <div id="direito-bancario" className="bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
-        <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
-          Direito Bancário
-        </h4>
+            <div id="direito-civil" className="premium-card bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
+              <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
+                Direito Civil
+              </h4>
+              <p className="text-neutral-700 text-lg leading-relaxed mb-5">
+                O Direito Civil abrange questões como contratos, indenizações, responsabilidade civil,
+                obrigações, cobranças, conflitos patrimoniais e demais relações jurídicas entre particulares.
+              </p>
+              <p className="text-neutral-700 text-lg leading-relaxed">
+                A atuação é voltada à solução estratégica de conflitos, prevenção de riscos e defesa dos interesses do cliente.
+              </p>
+            </div>
 
-        <p className="text-neutral-700 text-lg leading-relaxed mb-5">
-          O Direito Bancário trata de relações entre consumidores e instituições financeiras,
-          incluindo empréstimos abusivos, cartões consignados, RMC, fraudes bancárias,
-          cobranças indevidas e descontos não autorizados.
-        </p>
+            <div id="direito-consumidor" className="premium-card bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
+              <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
+                Direito do Consumidor
+              </h4>
+              <p className="text-neutral-700 text-lg leading-relaxed mb-5">
+                O Direito do Consumidor protege pessoas diante de práticas abusivas, cobranças indevidas,
+                negativação irregular, problemas com produtos, serviços defeituosos, contratos abusivos
+                e falhas na prestação de serviços.
+              </p>
+              <p className="text-neutral-700 text-lg leading-relaxed">
+                O escritório atua para buscar reparação, cancelamento de cobranças indevidas e proteção dos direitos do consumidor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <p className="text-neutral-700 text-lg leading-relaxed">
-          O objetivo é identificar irregularidades, buscar a suspensão de descontos indevidos
-          e, quando cabível, pleitear restituição de valores e indenização.
-        </p>
-      </div>
-
-      <div id="direito-civil" className="bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
-        <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
-          Direito Civil
-        </h4>
-
-        <p className="text-neutral-700 text-lg leading-relaxed mb-5">
-          O Direito Civil abrange questões como contratos, indenizações, responsabilidade civil,
-          obrigações, cobranças, conflitos patrimoniais e demais relações jurídicas entre particulares.
-        </p>
-
-        <p className="text-neutral-700 text-lg leading-relaxed">
-          A atuação é voltada à solução estratégica de conflitos, prevenção de riscos e defesa dos interesses do cliente.
-        </p>
-      </div>
-
-      <div id="direito-consumidor" className="bg-[#fbfaf7] rounded-[32px] p-10 border border-neutral-200 shadow-lg scroll-mt-32">
-        <h4 className="text-3xl font-serif font-bold text-[#8d1420] mb-5">
-          Direito do Consumidor
-        </h4>
-
-        <p className="text-neutral-700 text-lg leading-relaxed mb-5">
-          O Direito do Consumidor protege pessoas diante de práticas abusivas, cobranças indevidas,
-          negativação irregular, problemas com produtos, serviços defeituosos, contratos abusivos
-          e falhas na prestação de serviços.
-        </p>
-
-        <p className="text-neutral-700 text-lg leading-relaxed">
-          O escritório atua para buscar reparação, cancelamento de cobranças indevidas e proteção dos direitos do consumidor.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
       <section id="contato" className="py-24 bg-[#8d1420] text-white text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h3 className="text-5xl font-serif font-bold mb-6">
@@ -345,7 +327,7 @@ export default function Home() {
           <a
             href="https://wa.me/554699342000"
             target="_blank"
-            className="bg-white text-[#8d1420] px-10 py-5 rounded-2xl font-black shadow-2xl hover:bg-black hover:text-[#d6aa55] transition"
+            className="premium-button bg-white text-[#8d1420] px-10 py-5 rounded-2xl font-black shadow-2xl hover:bg-black hover:text-[#d6aa55] transition"
           >
             Entrar em contato
           </a>
@@ -360,29 +342,90 @@ export default function Home() {
           © 2026 Correa & Comiran — Todos os direitos reservados.
         </p>
       </footer>
+
       {/* Botões flutuantes */}
-<div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
-  {/* WhatsApp */}
-  <a
-    href="https://wa.me/554699342000"
-    target="_blank"
-    className="group flex items-center gap-3 bg-[#8d1420] text-white px-5 py-4 rounded-full shadow-2xl border border-[#d6aa55]/40 hover:bg-black hover:text-[#d6aa55] hover:scale-105 transition"
-  >
-    <span className="text-xl">💬</span>
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+        <a
+          href="https://wa.me/554699342000"
+          target="_blank"
+          className="premium-button group flex items-center gap-3 bg-[#8d1420] text-white px-5 py-4 rounded-full shadow-2xl border border-[#d6aa55]/40 hover:bg-black hover:text-[#d6aa55] transition"
+        >
+          <span className="text-xl">💬</span>
+          <span className="hidden md:block font-bold">Fale conosco</span>
+        </a>
 
-    <span className="hidden md:block font-bold">
-      Fale conosco
-    </span>
-  </a>
+        <a
+          href="#top"
+          className="premium-button w-14 h-14 rounded-full bg-black text-[#d6aa55] shadow-2xl border border-[#d6aa55]/40 flex items-center justify-center text-2xl hover:bg-[#8d1420] hover:text-white transition"
+        >
+          ↑
+        </a>
+      </div>
 
-  {/* Voltar ao topo */}
-  <a
-    href="#top"
-    className="w-14 h-14 rounded-full bg-black text-[#d6aa55] shadow-2xl border border-[#d6aa55]/40 flex items-center justify-center text-2xl hover:bg-[#8d1420] hover:text-white hover:scale-110 transition"
-  >
-    ↑
-  </a>
-</div>
+      <style jsx global>{`
+        html {
+          scroll-behavior: smooth;
+        }
+
+        .premium-fade {
+          animation: premiumFade 0.9s ease both;
+        }
+
+        .premium-up {
+          animation: premiumUp 0.9s ease both;
+        }
+
+        .premium-card {
+          transition: all 0.35s ease;
+        }
+
+        .premium-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 25px 50px rgba(141, 20, 32, 0.18);
+        }
+
+        .premium-button {
+          transition: all 0.3s ease;
+        }
+
+        .premium-button:hover {
+          transform: translateY(-3px) scale(1.03);
+          box-shadow: 0 18px 35px rgba(141, 20, 32, 0.25);
+        }
+
+        .gold-line {
+          animation: goldLine 1.2s ease both;
+        }
+
+        @keyframes premiumFade {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes premiumUp {
+          from {
+            opacity: 0;
+            transform: translateY(35px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes goldLine {
+          from {
+            width: 0;
+          }
+          to {
+            width: 160px;
+          }
+        }
+      `}</style>
     </main>
   )
 }
