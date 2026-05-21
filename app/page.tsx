@@ -83,34 +83,43 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="relative py-36 text-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-  <img
-    src="/escritorio.jpg"
-    alt="Equipe Correa & Comiran"
-    className="w-full h-full object-cover opacity-25"
-  />
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  {/* Imagem fundo */}
+  <div className="absolute inset-0">
+    <img
+      src="/escritorio.jpg"
+      alt="Equipe Correa & Comiran"
+      className="w-full h-full object-cover opacity-90"
+    />
 
-  <div className="absolute inset-0 bg-gradient-to-t from-[#fbfaf7] via-[#fbfaf7]/75 to-[#fbfaf7]/25" />
+    {/* Fade branco vindo de baixo */}
+    <div className="absolute inset-0 bg-gradient-to-t from-[#fbfaf7] via-[#fbfaf7]/55 to-transparent" />
 
-  <div className="absolute inset-0 bg-white/20" />
-</div>
-        <p className="uppercase tracking-[0.3em] text-[#9b7a3f] font-bold mb-5">
-          Correa & Comiran
-        </p>
+    {/* Camada suave */}
+    <div className="absolute inset-0 bg-white/10" />
+  </div>
 
-        <h2 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-8">
-          Advocacia estratégica,
-          <span className="block text-[#8d1420]">humana e eficiente</span>
-        </h2>
+  {/* Conteúdo */}
+  <div className="relative z-10 text-center px-6 pt-40">
+    <p className="uppercase tracking-[0.35em] text-[#b3873d] font-bold mb-6">
+      Correa & Comiran
+    </p>
 
-        <div className="w-40 h-[2px] bg-[#b28b4a] mx-auto mb-8" />
+    <h2 className="text-6xl md:text-8xl font-serif font-bold leading-tight text-[#1d1d1d]">
+      Advocacia estratégica,
+      <span className="block text-[#7c0f1c]">
+        humana e eficiente
+      </span>
+    </h2>
 
-        <p className="max-w-3xl mx-auto text-xl text-neutral-600 leading-relaxed">
-          Escritório especializado em soluções jurídicas modernas, com atuação em Direito
-          Previdenciário, Bancário, Civil, Consumidor e Sucessões.
-        </p>
-      </section>
+    <div className="w-40 h-[2px] bg-[#b3873d] mx-auto my-10" />
+
+    <p className="max-w-4xl mx-auto text-2xl text-neutral-700 leading-relaxed">
+      Escritório especializado em soluções jurídicas modernas, com atuação em
+      Direito Previdenciário, Bancário, Civil, Consumidor e Sucessões.
+    </p>
+  </div>
+</section>
 
       <section id="equipe" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
