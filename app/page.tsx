@@ -53,7 +53,7 @@ const equipe = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#fbfaf7] text-[#1f1f1f]">
+    <main id="top" className="min-h-screen bg-[#fbfaf7] text-[#1f1f1f]">
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#d8c7a3]/40">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-4">
@@ -360,6 +360,29 @@ export default function Home() {
           © 2026 Correa & Comiran — Todos os direitos reservados.
         </p>
       </footer>
+      {/* Botões flutuantes */}
+<div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/554699342000"
+    target="_blank"
+    className="group flex items-center gap-3 bg-[#8d1420] text-white px-5 py-4 rounded-full shadow-2xl border border-[#d6aa55]/40 hover:bg-black hover:text-[#d6aa55] hover:scale-105 transition"
+  >
+    <span className="text-xl">💬</span>
+
+    <span className="hidden md:block font-bold">
+      Fale conosco
+    </span>
+  </a>
+
+  {/* Voltar ao topo */}
+  <a
+    href="#top"
+    className="w-14 h-14 rounded-full bg-black text-[#d6aa55] shadow-2xl border border-[#d6aa55]/40 flex items-center justify-center text-2xl hover:bg-[#8d1420] hover:text-white hover:scale-110 transition"
+  >
+    ↑
+  </a>
+</div>
     </main>
   )
 }
