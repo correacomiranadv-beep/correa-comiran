@@ -98,10 +98,11 @@ export default function Home() {
 
         <div className="gold-line w-40 h-[2px] bg-[#b28b4a] mx-auto mb-8" />
 
-        <p className="premium-fade max-w-3xl mx-auto text-xl text-neutral-600 leading-relaxed px-6">
-          Escritório especializado em soluções jurídicas modernas, com atuação em Direito
-          Previdenciário, Bancário, Civil, Consumidor e Sucessões.
-        </p>
+        <p className="premium-fade max-w-4xl mx-auto text-xl text-neutral-600 leading-relaxed px-6">
+  Escritório de advocacia especializado em Direito Previdenciário,
+  Direito Bancário, Direito Civil e Direito do Consumidor,
+  com atendimento profissional em Realeza e Santo Antônio do Sudoeste - PR.
+</p>
       </section>
 
       <section id="equipe" className="py-24 bg-white">
