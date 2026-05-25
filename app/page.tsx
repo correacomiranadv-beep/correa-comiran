@@ -78,6 +78,7 @@ export default function Home() {
             <a href="#areas" className="hover:text-[#8d1420] transition">Áreas</a>
             <a href="#formulario" className="hover:text-[#8d1420] transition">Atendimento</a>
             <a href="#localizacao" className="hover:text-[#8d1420] transition">Localização</a>
+            <a href="#avaliacao" className="hover:text-[#8d1420] transition">Avaliar</a>
             <a href="#contato" className="hover:text-[#8d1420] transition">Contato</a>
           </nav>
 
@@ -104,6 +105,7 @@ export default function Home() {
               ["Áreas", "#areas"],
               ["Atendimento", "#formulario"],
               ["Localização", "#localizacao"],
+              ["Avaliar", "#avaliacao"],
               ["Contato", "#contato"],
             ].map(([nome, link]) => (
               <a
@@ -341,6 +343,31 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+
+      <section id="avaliacao" className="py-20 md:py-24 bg-[#fbfaf7] border-t border-neutral-200 text-center">
+        <div className="max-w-4xl mx-auto px-4 md:px-6">
+          <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
+            Avaliação
+          </p>
+
+          <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+            Avalie nosso escritório no Google
+          </h3>
+
+          <p className="text-neutral-600 text-lg md:text-xl mb-10 max-w-3xl mx-auto">
+            Sua avaliação ajuda outras pessoas a conhecerem nosso trabalho e fortalece a confiança em nosso atendimento.
+          </p>
+
+          <a
+            href="https://g.page/r/CadkLkQAhi7SEAI/review"
+            target="_blank"
+            className="premium-button inline-block bg-[#d6aa55] text-black px-8 md:px-10 py-5 rounded-2xl font-black shadow-2xl hover:bg-[#8d1420] hover:text-white transition"
+          >
+            ⭐ Avaliar no Google
+          </a>
         </div>
       </section>
 
