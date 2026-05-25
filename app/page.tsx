@@ -10,7 +10,7 @@ const equipe = [
     oab: "OAB/PR 105.238",
     foto: "/mariele.jpg",
     instagram: "https://www.instagram.com/marielecorreaantonielli/",
-    whatsapp: "https://wa.me/5546999417656",
+    whatsapp: "https://wa.me/5546999417656?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20Correa%20%26%20Comiran%20Advogados%20Associados%20e%20gostaria%20de%20um%20atendimento.",
     telefone: "+55 46 99941-7656",
   },
   {
@@ -20,7 +20,7 @@ const equipe = [
     oab: "OAB/PR 134.858",
     foto: "/laryssa.jpg",
     instagram: "https://www.instagram.com/adv.laryssabrito/",
-    whatsapp: "https://wa.me/5546988200648",
+    whatsapp: "https://wa.me/5546988200648?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20Correa%20%26%20Comiran%20Advogados%20Associados%20e%20gostaria%20de%20um%20atendimento.",
     telefone: "+55 46 98820-0648",
   },
   {
@@ -30,7 +30,7 @@ const equipe = [
     oab: "OAB/PR 129.345",
     foto: "/jairo.jpg",
     instagram: "https://www.instagram.com/adv_jairo_krug_junior/",
-    whatsapp: "https://wa.me/5546988183704",
+    whatsapp: "https://wa.me/5546988183704?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20Correa%20%26%20Comiran%20Advogados%20Associados%20e%20gostaria%20de%20um%20atendimento.",
     telefone: "+55 46 98818-3704",
   },
   {
@@ -40,7 +40,7 @@ const equipe = [
     oab: "OAB/PR 101.893",
     foto: "/francieli.jpg",
     instagram: "https://www.instagram.com/fran_comiran/",
-    whatsapp: "https://wa.me/5546999342000",
+    whatsapp: "https://wa.me/5546999342000?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20Correa%20%26%20Comiran%20Advogados%20Associados%20e%20gostaria%20de%20um%20atendimento.",
     telefone: "+55 46 99934-2000",
   },
   {
@@ -50,50 +50,8 @@ const equipe = [
     oab: "OAB/PR 129.284",
     foto: "/antonio.jpg",
     instagram: "https://www.instagram.com/antoniolui_s/",
-    whatsapp: "https://wa.me/5545998506623",
+    whatsapp: "https://wa.me/5545998506623?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20Correa%20%26%20Comiran%20Advogados%20Associados%20e%20gostaria%20de%20um%20atendimento.",
     telefone: "+55 45 99850-6623",
-  },
-]
-
-
-const artigos = [
-  {
-    titulo: "Quem tem direito ao BPC/LOAS?",
-    texto:
-      "O BPC/LOAS é um benefício assistencial destinado a idosos e pessoas com deficiência que comprovem situação de vulnerabilidade social. A análise correta dos documentos pode fazer diferença no resultado do pedido.",
-  },
-  {
-    titulo: "Descontos bancários indevidos: o que fazer?",
-    texto:
-      "Em casos de RMC, empréstimos não contratados, fraudes ou cobranças abusivas, é possível buscar a suspensão dos descontos e a reparação dos prejuízos sofridos.",
-  },
-  {
-    titulo: "Quando pedir revisão de aposentadoria?",
-    texto:
-      "A revisão pode ser indicada quando há erro no cálculo, vínculos não considerados, contribuições ignoradas ou possibilidade de melhorar o valor do benefício.",
-  },
-]
-
-const perguntas = [
-  {
-    pergunta: "O escritório atende online?",
-    resposta:
-      "Sim. O atendimento pode ser realizado de forma presencial ou online, com orientação inicial pelo WhatsApp e acompanhamento conforme a necessidade do caso.",
-  },
-  {
-    pergunta: "Vocês atuam em ações contra o INSS?",
-    resposta:
-      "Sim. Atuamos em aposentadorias, BPC/LOAS, auxílio-doença, pensão por morte, revisões e demais benefícios previdenciários.",
-  },
-  {
-    pergunta: "Atendem casos de descontos bancários indevidos?",
-    resposta:
-      "Sim. O escritório atua em casos de abusos bancários, RMC, fraudes, empréstimos não contratados, cobranças indevidas e descontos não autorizados.",
-  },
-  {
-    pergunta: "Como faço para solicitar atendimento?",
-    resposta:
-      "Você pode preencher o formulário do site ou clicar no botão de WhatsApp para falar diretamente com a equipe.",
   },
 ]
 
@@ -118,8 +76,6 @@ export default function Home() {
           <nav className="hidden md:flex gap-8 text-sm font-semibold">
             <a href="#equipe" className="hover:text-[#8d1420] transition">Equipe</a>
             <a href="#areas" className="hover:text-[#8d1420] transition">Áreas</a>
-            <a href="#blog" className="hover:text-[#8d1420] transition">Blog</a>
-            <a href="#faq" className="hover:text-[#8d1420] transition">FAQ</a>
             <a href="#formulario" className="hover:text-[#8d1420] transition">Atendimento</a>
             <a href="#localizacao" className="hover:text-[#8d1420] transition">Localização</a>
             <a href="#contato" className="hover:text-[#8d1420] transition">Contato</a>
@@ -133,7 +89,7 @@ export default function Home() {
           </button>
 
           <a
-            href="https://wa.me/554699342000"
+            href="https://wa.me/554699342000?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20Correa%20%26%20Comiran%20Advogados%20Associados%20e%20gostaria%20de%20um%20atendimento."
             target="_blank"
             className="hidden md:block premium-button bg-[#8d1420] text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-black transition"
           >
@@ -146,8 +102,6 @@ export default function Home() {
             {[
               ["Equipe", "#equipe"],
               ["Áreas", "#areas"],
-              ["Blog", "#blog"],
-              ["FAQ", "#faq"],
               ["Atendimento", "#formulario"],
               ["Localização", "#localizacao"],
               ["Contato", "#contato"],
@@ -163,7 +117,7 @@ export default function Home() {
             ))}
 
             <a
-              href="https://wa.me/554699342000"
+              href="https://wa.me/554699342000?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20Correa%20%26%20Comiran%20Advogados%20Associados%20e%20gostaria%20de%20um%20atendimento."
               target="_blank"
               className="block py-4 rounded-2xl bg-[#8d1420] text-white"
             >
@@ -257,89 +211,6 @@ export default function Home() {
                     WhatsApp: {pessoa.telefone}
                   </p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* BLOG JURÍDICO */}
-      <section id="blog" className="py-20 md:py-24 bg-[#fbfaf7] border-t border-neutral-200">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="text-center mb-14 md:mb-16">
-            <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
-              Blog Jurídico
-            </p>
-
-            <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-              Conteúdos e orientações
-            </h3>
-
-            <p className="text-neutral-600 text-lg max-w-3xl mx-auto">
-              Informações jurídicas para orientar clientes sobre seus direitos em temas previdenciários, bancários, civis e consumeristas.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {artigos.map((artigo) => (
-              <article
-                key={artigo.titulo}
-                className="premium-card bg-white rounded-[28px] border border-neutral-200 shadow-xl p-8"
-              >
-                <p className="text-[#9b7a3f] uppercase tracking-[0.25em] font-bold text-xs mb-4">
-                  Artigo Jurídico
-                </p>
-
-                <h4 className="text-2xl font-serif font-bold mb-5 text-[#8d1420]">
-                  {artigo.titulo}
-                </h4>
-
-                <p className="text-neutral-600 leading-relaxed">
-                  {artigo.texto}
-                </p>
-
-                <a
-                  href="#formulario"
-                  className="inline-block mt-7 text-[#8d1420] font-bold hover:text-[#9b7a3f] transition"
-                >
-                  Solicitar orientação →
-                </a>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section id="faq" className="py-20 md:py-24 bg-white border-t border-neutral-200">
-        <div className="max-w-5xl mx-auto px-4 md:px-6">
-          <div className="text-center mb-14 md:mb-16">
-            <p className="text-[#9b7a3f] uppercase tracking-[0.3em] font-bold mb-4">
-              FAQ
-            </p>
-
-            <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-              Perguntas frequentes
-            </h3>
-
-            <p className="text-neutral-600 text-lg">
-              Tire dúvidas comuns sobre nossos atendimentos e áreas de atuação.
-            </p>
-          </div>
-
-          <div className="space-y-6">
-            {perguntas.map((item) => (
-              <div
-                key={item.pergunta}
-                className="premium-card bg-[#fbfaf7] border border-neutral-200 rounded-[24px] p-7"
-              >
-                <h4 className="text-xl font-bold text-[#8d1420] mb-4">
-                  {item.pergunta}
-                </h4>
-
-                <p className="text-neutral-700 leading-relaxed">
-                  {item.resposta}
-                </p>
               </div>
             ))}
           </div>
@@ -483,7 +354,7 @@ export default function Home() {
             Fale com nossa equipe e receba atendimento profissional.
           </p>
 
-          <a href="https://wa.me/554699342000" target="_blank" className="premium-button bg-white text-[#8d1420] px-8 md:px-10 py-5 rounded-2xl font-black shadow-2xl inline-block">
+          <a href="https://wa.me/554699342000?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20Correa%20%26%20Comiran%20Advogados%20Associados%20e%20gostaria%20de%20um%20atendimento." target="_blank" className="premium-button bg-white text-[#8d1420] px-8 md:px-10 py-5 rounded-2xl font-black shadow-2xl inline-block">
             Entrar em contato
           </a>
         </div>
@@ -495,7 +366,7 @@ export default function Home() {
       </footer>
 
       <div className="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
-        <a href="https://wa.me/554699342000" target="_blank" className="premium-button bg-[#8d1420] text-white px-4 md:px-5 py-4 rounded-full shadow-2xl border border-[#d6aa55]/40">
+        <a href="https://wa.me/554699342000?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20da%20Correa%20%26%20Comiran%20Advogados%20Associados%20e%20gostaria%20de%20um%20atendimento." target="_blank" className="premium-button bg-[#8d1420] text-white px-4 md:px-5 py-4 rounded-full shadow-2xl border border-[#d6aa55]/40">
           💬 <span className="hidden md:inline font-bold ml-2">Fale conosco</span>
         </a>
 
